@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/bmdavis419/the-better-backend/app"
 	_ "github.com/bmdavis419/the-better-backend/docs"
 )
@@ -14,6 +16,7 @@ import (
 // @BasePath /
 func main() {
 	// setup and run app
+	fmt.Println("Starting app...")
 	err := app.SetupAndRunApp()
 	if err != nil {
 		panic(err)
